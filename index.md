@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-![React Logo](react.png)
+![React Logo](https://github.com/khoshrou/AppFrame/blob/gh-pages/images/react.png)
 
 You can use the [editor on GitHub](https://github.com/khoshrou/AppFrame/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 

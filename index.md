@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-![React Logo](https://github.com/khoshrou/AppFrame/blob/gh-pages/images/react.png)
+![React Logo](https://khoshrou.github.io/AppFrame/images/react.png)
 
 You can use the [editor on GitHub](https://github.com/khoshrou/AppFrame/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -12,19 +12,17 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 ```csharp
 /// <summary>
-/// شغل مربوط به یک سمت را پیدا می کنیم
+/// GetJobromJobTitle description
 /// </summary>
 /// <param name="jobTitle"></param>
 /// <returns></returns>
-public Job GetJobFromJobTitle(JobTitle jobTitle)
-{
+public Job GetJobromJobTitle(JobTitle jobTitle)
+{F
 	if (jobTitle != null)
 	{
-		// در صورتی که گروهبندی شغل وجود داشت
 		var catid = jobTitle.JobCategory?.ID;
 		if (catid != null && catid.HasValue)
 		{
-			// شغل مورد نظر شغلی است که در همان گروهبندی سمت قرار دارد
 			return InstanceFactory<JobAtomicService>.CreateInstance(CurrentUnityContainer)
 				.Get(x => x.DataStateEnum == DataStateEnum.Finalized && x.JobCategory.ID == catid);
 		}

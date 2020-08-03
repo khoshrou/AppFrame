@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
 defaults:
   # _docs
   - scope:
@@ -8,6 +7,3 @@ defaults:
     values:
       sidebar:
         nav: "docs"
-=======
-theme: jekyll-theme-slate
->>>>>>> 6bb3c94eeac93c99f0fb79ee850a645061189db9

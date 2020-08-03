@@ -10,6 +10,69 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
+```csharp
+/// <summary>
+/// شغل مربوط به یک سمت را پیدا می کنیم
+/// </summary>
+/// <param name="jobTitle"></param>
+/// <returns></returns>
+public Job GetJobFromJobTitle(JobTitle jobTitle)
+{
+	if (jobTitle != null)
+	{
+		// در صورتی که گروهبندی شغل وجود داشت
+		var catid = jobTitle.JobCategory?.ID;
+		if (catid != null && catid.HasValue)
+		{
+			// شغل مورد نظر شغلی است که در همان گروهبندی سمت قرار دارد
+			return InstanceFactory<JobAtomicService>.CreateInstance(CurrentUnityContainer)
+				.Get(x => x.DataStateEnum == DataStateEnum.Finalized && x.JobCategory.ID == catid);
+		}
+	}
+	return null;
+}
+```
+
+```js
+import nextConnect from 'next-connect'
+import auth from '../../middleware/auth'
+import { deleteUser, updateUserByUsername } from '../../lib/db'
+
+const handler = nextConnect()
+
+handler
+  .use(auth)
+  .get((req, res) => {
+    // You do not generally want to return the whole user object
+    // because it may contain sensitive field such as !!password!! Only return what needed
+    // const { name, username, favoriteColor } = req.user
+    // res.json({ user: { name, username, favoriteColor } })
+    res.json({ user: req.user })
+  })
+  .use((req, res, next) => {
+    // handlers after this (PUT, DELETE) all require an authenticated user
+    // This middleware to check if user is authenticated before continuing
+    if (!req.user) {
+      res.status(401).send('unauthenticated')
+    } else {
+      next()
+    }
+  })
+  .put((req, res) => {
+    const { name } = req.body
+    const user = updateUserByUsername(req, req.user.username, { name })
+    res.json({ user })
+  })
+  .delete((req, res) => {
+    deleteUser(req)
+    req.logOut()
+    res.status(204).end()
+  })
+
+export default handler
+
+```
+
 ```markdown
 Syntax highlighted code block
 

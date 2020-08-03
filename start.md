@@ -11,3 +11,7 @@ You can use the [editor on GitHub](https://github.com/khoshrou/AppFrame/edit/gh-
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 [Home]({{ site.baseurl }})
+
+[Home 2]({{ site.baseurl }})
+
+![React Logo]({{ site.baseurl }}/images/react.png)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 theme: jekyll-theme-cayman
 defaults:
   # _docs
@@ -7,3 +8,6 @@ defaults:
     values:
       sidebar:
         nav: "docs"
+=======
+theme: jekyll-theme-slate
+>>>>>>> 6bb3c94eeac93c99f0fb79ee850a645061189db9

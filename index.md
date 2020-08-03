@@ -2,7 +2,7 @@
 
 ![React Logo](https://khoshrou.github.io/AppFrame/images/react.png)
 
-[Start Here](https://khoshrou.github.io/AppFrame/start.md)
+[Start Here](https://khoshrou.github.io/AppFrame/start.html)
 
 You can use the [editor on GitHub](https://github.com/khoshrou/AppFrame/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 

@@ -1,2 +1,2 @@
 # AppFrame
-Docs: [https://khoshrou.github.io/AppFrame/]
+[Docs](https://khoshrou.github.io/AppFrame/)

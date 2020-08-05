@@ -1,4 +1,5 @@
 theme: jekyll-theme-minimal
+remote-theme: minimal-mistakes
 defaults:
   # _docs
   - scope:

@@ -1,3 +1,9 @@
+---
+title: Start Here
+parent: Home
+has_children: false
+nav_order: 1
+---
 ## Welcome to Start Page
 
 - Create a Project

@@ -1,3 +1,8 @@
+---
+title: Home
+has_children: true
+nav_order: 1
+---
 ## Welcome to GitHub Pages
 
 ![React Logo](https://khoshrou.github.io/AppFrame/images/react.png)

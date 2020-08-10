@@ -1,10 +1,1 @@
-theme: jekyll-theme-leap-day
-remote-theme: minimal-mistakes
-defaults:
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      sidebar:
-        nav: "docs"
+remote_theme: "mmistakes/minimal-mistakes@4.20.1"
